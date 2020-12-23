@@ -3,6 +3,7 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
+/* color for alternating gray boxes #D3D3D3	rgb(211,211,211)*/
 
 #mainNav {
   min-height: 75px;
@@ -183,7 +184,7 @@
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #00bf6f;
   }
 }
 
@@ -197,7 +198,7 @@
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
+    border-color: #00bf6f;
     border-width: .25rem;
     width: 30%;
   }
@@ -283,7 +284,7 @@ a:focus, a:hover {
 }
 
 .bg-black {
-  background-color: #161616 !important;
+  background-color: #D3D3D3	!important;
 }
 
 .bg-primary {
