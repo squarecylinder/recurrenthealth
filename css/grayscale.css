@@ -7,7 +7,8 @@
 
 #mainNav {
   min-height: 75px;
-  background-color: black;
+  /* background-color: white; */
+  /* opacity: .5; */
   color: #64a19d;
 }
 
@@ -49,6 +50,7 @@
     transition: none;
     padding: 2rem 1.5rem;
     color: #00bf6f;
+    font-weight: bold;
   }
   #mainNav .nav-link:hover {
     /* color: rgba(255, 255, 255, 0.75); */
@@ -58,7 +60,11 @@
   }
   #mainNav.navbar-shrink {
    /* height: 56px; */
-   transition: cubic-bezier(0.15, 0.99, 1, 0.84)
+   background-color: white;
+   transition: cubic-bezier(0.15, 0.99, 1, 0.84);
+   -webkit-box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.75);
+   -moz-box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.75);
+   box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.75);
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #00bf6f;
@@ -88,12 +94,6 @@
   min-height: 35rem;
   padding: 15rem 0;
   background: white
-  /* linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%),
-   url("../img/bg-masthead.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover; */
 }
 
 .masthead h1 {
@@ -101,10 +101,6 @@
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  /* background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  text-shadow: 0 0 3px; */
 }
 
 .masthead h2 {
@@ -121,7 +117,7 @@
 
 @media (min-width: 992px) {
   .masthead {
-    height: 100vh;
+    height: 75vh;
     padding: 0;
   }
   .masthead h1 {
@@ -152,11 +148,11 @@
 }
 
 .btn-primary:hover {
-  background-color: #4f837f;
+  background-color: #00bf6f;
 }
 
 .btn-primary:focus {
-  background-color: #4f837f;
+  background-color: #00bf6f;
   color: white;
 }
 
@@ -165,12 +161,12 @@
 }
 
 .about-section {
-  padding-top: 10rem;
+  padding-top: 30px;
   background: #00bf6f;
 }
 
 .about-section p {
-  margin-bottom: 5rem;
+  margin-bottom: 30px;
 }
 
 .projects-section {
@@ -207,11 +203,6 @@
 .signup-section {
   padding: 10rem 0;
   background: white
-   /* linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover; */
 }
 
 .signup-section .form-inline input {
@@ -268,7 +259,9 @@
 .contact-section .social a:active {
   color: #fff;
 }
-
+.social{
+  padding: 10px;
+}
 body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
@@ -297,4 +290,16 @@ a:focus, a:hover {
 
 footer {
   padding: 5rem 0;
+}
+.img-fluid{
+  max-width:555px;
+  max-height:408px;
+}
+#mission-img{
+  max-width: 700px;
+  max-height: 500px;
+  border-radius: 10%;
+}
+.card{
+  background-color:#D3D3D3;
 }
