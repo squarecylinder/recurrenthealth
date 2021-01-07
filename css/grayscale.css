@@ -108,14 +108,14 @@
   font-size: 1rem;
 }
 
-/* @media (min-width: 768px) { */
+@media (min-width: 768px) {
   .masthead h1 {
     font-size: 4rem;
     line-height: 4rem;
   }
-/* } */
+}
 
-/* @media (min-width: 992px) { */
+@media (min-width: 992px) {
   .masthead {
     height: 75vh;
     padding: 0;
@@ -129,7 +129,7 @@
     max-width: 30rem;
     font-size: 1.25rem;
   }
-/* } */
+}
 
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
@@ -191,7 +191,7 @@
 
 /* @media (min-width: 992px) { */
   .projects-section .project-text {
-    /* padding: 5rem; */
+    padding: 5rem;
   }
   .projects-section .project-text hr {
     border-color: #00bf6f;
@@ -294,11 +294,11 @@ textarea{
 footer {
   padding: 5rem 0;
 }
-#mission-img{
+/* #mission-img{
   max-width: 700px;
   max-height: 500px;
   border-radius: 10%;
-}
+} */
 .card{
   background-color:#D3D3D3;
 }
