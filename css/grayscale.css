@@ -302,3 +302,9 @@ footer {
 .card{
   background-color:#D3D3D3;
 }
+.icon-section {
+  padding: 5em;
+}
+.icon {
+  padding: 2em;
+}
