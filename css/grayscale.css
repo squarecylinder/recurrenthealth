@@ -308,3 +308,12 @@ footer {
 .icon {
   padding: 2em;
 }
+.hidden {
+  display: none
+}
+#submitted {
+  padding: 2em
+}
+.required {
+  color: red
+}
