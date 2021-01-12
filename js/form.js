@@ -1,5 +1,4 @@
 $(document).ready(()=>{
-    const mailer = "./mailer.php"
 
     $("#submit-btn").click(function(event) {
         event.preventDefault();
