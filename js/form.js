@@ -1,15 +1,27 @@
 $(document).ready(()=>{
-    $("#submit-btn").on("click", function(event) {
+
+    $("#submit-btn").click(function(event) {
         event.preventDefault();
-        console.log("submit was hit")
+        let dataString = $('#contactForm').serializeArray();
+        console.log(dataString);
+        const formData = {
+        name: $("#Name").val(),
+        email: $("#Email").val(),
+        company: $("#Company").val(),
+        phone: $("#PhoneNumber").val(),
+        message: $("#Message").val()
+        }
+        console.log(formData)
         $("#submitted").removeClass("hidden");
-        // $.ajax({
-        //     URL: somephp.url,
-        //     TYPE: "POST",
-        //     DATA: JSON.stringify(formData),
-        //     success: function(){
-        //         alert("form sent")
-        //     }
-        // })
+        $.ajax({
+            type: "POST",
+            url: "./php/mailer.php",
+            data: 'name='+$('#Name').val()+'&email='+$('#Email').val()+'&company='+$('#Company').val()+'&phone='+$('#PhoneNumber').val()+'&message='+$('#message').val()
+        }).done(function (data) {
+            console.log(data);
+            alert("It's OK!");
+        }).fail(function (data) {
+            console.log(data);
+        });
     })
 })
