@@ -1,6 +1,7 @@
 $(document).ready(()=>{
+    const mailer = "./mailer.php"
 
-    $("#submit-btn").on("click", function(event) {
+    $("#submit-btn").click(function(event) {
         event.preventDefault();
         const formData = {
         name: $("#Name").val(),
@@ -13,12 +14,15 @@ $(document).ready(()=>{
         console.log(formData)
         $("#submitted").removeClass("hidden");
         $.ajax({
-            TYPE: "POST",
-            URL: "../php/mailer.php",
-            DATA: JSON.stringify(formData),
-            success: function(){
-                alert("form sent")
-            }
-        })
+            type: "POST",
+            url: "./php/mailer.php",
+            dataType: "json",
+            data: JSON.stringify(formData)
+        }).done(function (data) {
+            console.log(data);
+            alert("It's OK!");
+        }).fail(function (data) {
+            console.log(data);
+        });
     })
 })
