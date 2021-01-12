@@ -9,12 +9,11 @@ $(document).ready(()=>{
         phone: $("#PhoneNumber").val(),
         message: $("#Message").val()
         }
-        console.log("submit was hit")
-        console.log(formData)
+        console.log(formDatas)
         $("#submitted").removeClass("hidden");
         $.ajax({
             type: "POST",
-            url: "./js/mailer.php",
+            url: "./php/mailer.php",
             dataType: "json",
             data: JSON.stringify(formData)
         }).done(function (data) {
