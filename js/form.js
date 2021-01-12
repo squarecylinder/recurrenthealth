@@ -14,7 +14,7 @@ $(document).ready(()=>{
         $("#submitted").removeClass("hidden");
         $.ajax({
             type: "POST",
-            url: "./php/mailer.php",
+            url: "./js/mailer.php",
             dataType: "json",
             data: JSON.stringify(formData)
         }).done(function (data) {
