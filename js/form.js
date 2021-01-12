@@ -9,7 +9,7 @@ $(document).ready(()=>{
         phone: $("#PhoneNumber").val(),
         message: $("#Message").val()
         }
-        console.log(formDatas)
+        console.log(formData)
         $("#submitted").removeClass("hidden");
         $.ajax({
             type: "POST",
